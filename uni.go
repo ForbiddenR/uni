@@ -5,5 +5,5 @@ import "unique"
 type String = unique.Handle[string]
 
 func New(s string) String {
-	return unique.Make(s)
+	return String(unique.Make(s))
 }
